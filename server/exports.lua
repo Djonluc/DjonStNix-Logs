@@ -1,7 +1,7 @@
 -- ==============================================================================
 -- server/exports.lua
 -- Universal logging API for 3rd-party resources.
--- Drop-in replacement for JD_logsV3 exports.
+-- Drop-in replacement for legacy logging systems.
 -- ==============================================================================
 
 -- ==============================================================================
@@ -77,7 +77,7 @@ exports('createLog', function(args)
 end)
 
 -- ==============================================================================
--- LEGACY EXPORT: discord (JD_logsV3 v1 compatibility)
+-- LEGACY EXPORT: discord (Legacy Compatibility)
 -- ==============================================================================
 -- Usage: exports['DjonStNix-Logs']:discord(msg, player_1, player_2, color, channel)
 --

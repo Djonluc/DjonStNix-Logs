@@ -333,7 +333,7 @@ exports['DjonStNix-Logs']:SendLog(
 )
 ```
 
-### `discord` (Legacy JD_logsV3 Compatible)
+### `discord` (Legacy Compatibility)
 
 ```lua
 exports['DjonStNix-Logs']:discord(
@@ -418,9 +418,8 @@ DjonStNix-Logs is designed for maximum performance:
 
 ## ❓ FAQ
 
-### Can I use DjonStNix-Logs alongside qb-central-logs?
-
-Yes. They are independent resources. `qb-central-logs` handles general QBCore events, while `DjonStNix-Logs` focuses on ox_inventory, analytics, and advanced features. You may experience duplicate logs for join/leave/chat if both are running — disable those webhooks in one of them.
+### Can I use DjonStNix-Logs with others?
+Yes. DjonStNix-Logs is designed to be the primary engine for analytics and asset tracking. If you have other loggers running, you may see duplicate messages; we recommend disabling overlapping categories in your other scripts to keep your Discord tidy.
 
 ### Does it work with ESX?
 
@@ -434,9 +433,8 @@ ox_inventory v2.20+ is recommended for full `registerHook` support (swapItems, b
 
 Use the `createLog` export. See the [Export API](#-export-api) section.
 
-### Can other resources that used JD_logsV3 switch to DjonStNix-Logs?
-
-Yes. Change `exports.JD_logsV3:createLog(...)` to `exports['DjonStNix-Logs']:createLog(...)` — the API is fully compatible.
+### How do I switch my existing scripts to DjonStNix-Logs?
+Simply update your logging exports to `exports['DjonStNix-Logs']:createLog(...)`. Our API is designed for maximum compatibility with industry standards, making the transition seamless.
 
 ---
 
